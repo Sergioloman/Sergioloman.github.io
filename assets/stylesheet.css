@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color:blue; 
+    --main-font:verdana;
+}
+h1, h2, h3 { 
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
