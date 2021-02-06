@@ -1,13 +1,11 @@
-# Sergio's website - Elements.
+# Meet Sergioloman  
+## Hello Everyone, my name is Sergio Torres and this is my website
 
-- HTML semantic elements
-- classes that make sense
-- wireframing
- ( use canva for this )
+Here you will find information about me and how to contact me.
 
-- responsive ( lets do phone first?)
-- create several branches for your work.
+Enjoy!
 
+_________________________________
 
 
 
