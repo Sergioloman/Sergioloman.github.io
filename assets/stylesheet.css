@@ -30,26 +30,3 @@ a:link {
     height:300px;
     
 }
-
-/* hiding our elements */
-aside:focus .about {
-    display: none;
-}
-/* remember:
-
-selector:pseudo-class {
-  property: value;
-}
-
-
-/*body:active .portfolio,
-.aside:focus .portfolio {
-    display: none;
-}
-
-
-body:active .contact,
-.aside:focus .contact {
-    display: none;
-}
-*/
