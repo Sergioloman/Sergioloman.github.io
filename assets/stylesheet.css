@@ -20,6 +20,9 @@ p , a {
     color: var(--sec-color);
 }
 
+a:link {
+    text-decoration: none;
+}
 .hero {
     background-image: url("https://media-exp1.licdn.com/dms/image/C4E16AQEkzvzGy2HtfQ/profile-displaybackgroundimage-shrink_350_1400/0/1611986227644?e=1617840000&v=beta&t=WMmNa8IRN1VyDzFV-CAIbawyLJR4GyERwG4jfzi8C-k");
     background-position: center;
@@ -28,4 +31,25 @@ p , a {
     
 }
 
+/* hiding our elements */
+aside:focus .about {
+    display: none;
+}
+/* remember:
 
+selector:pseudo-class {
+  property: value;
+}
+
+
+/*body:active .portfolio,
+.aside:focus .portfolio {
+    display: none;
+}
+
+
+body:active .contact,
+.aside:focus .contact {
+    display: none;
+}
+*/

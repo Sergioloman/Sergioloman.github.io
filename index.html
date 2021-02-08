@@ -7,10 +7,13 @@
     <link rel='stylesheet'href='https://fonts.googleapis.com/css?family= 'Pathway Gothic One' , Sans-serif;>
 </head>
 <body>
-    <header> 
-        <a href="index.html">
-        <h1>Sergio Torres</h1>
-        </a>
+    <header class="hero"> 
+        <div>
+            <a href="index.html">
+                <h1>Sergio Torres</h1>
+            </a>
+            <h2>Web designer at xyz</h2>
+        </div>                  
         <nav>
             <ul>
                 <li>
@@ -26,31 +29,38 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <article class="hero">
+    <aside>
+        <ul>
+            <li class="about" id="hide-about">About</li>
+            
+            <li class="portfolio" id="hide-portfolio"> Portfolio</li>
+               
+            <li class="contact" id="hide-contact">Contact</li>
+        </ul>
+    </aside>
+    <Main>   
 
+        <article class="about">
             <div>
-                <h2>Upbeat title</h2>
-                <p>here is a quick status description "current work title or else"</p>
-            </div>    
-        </article>
-    </section>
-        <article id="about">
+                <h3>About</h3>
+            </div>
             <div>
-                <h3>About?</h3>
                 <p>use this line to talk about your achievements, maybe have a link to your resume?</p>
             </div>
-            <Img src="url" alt="A welcoming picture">
-         
+            
         </article>
-        <article  id="portfolio">
+        
+        <article  class="portfolio">
             <div>
                 <h3>Portfolio</h3>
+            </div>
+            <div>    
                 <p>placeholder for lots of picture-links, make boxes that get bigger when clicking</p>
             </div>
-            <img src="url" alt="a picture of a portfolio?">
+            
         </article>
-        <article id="contact">
+        
+        <article class="contact">
             <div>
                 <h3>Contact me</h3>
                 <p>find me using the links below </p>
@@ -66,12 +76,13 @@
                     </li>
                 </ul>
             </div>
-            <img src="url" alt="a picture of a mailbox">
+         
         </article>
+    </Main>
     <footer>
         <div>
             <h2>
-                A quote for something
+                footer -A quote for something
             </h2>
         </div>
         <form>
