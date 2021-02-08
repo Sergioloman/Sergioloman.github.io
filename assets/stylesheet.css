@@ -4,19 +4,28 @@
 }
 
 :root {
-    --main-color:blue; 
-    --main-font:verdana;
+    --main-color:#df5639; 
+    --sec-color:#ffc4d0;
+    --back-color:black;
+    --lines-color:#ec5390;
+    --main-font:Pathway Gothic One;
 }
-h1, h2, h3 { 
-    font-family: var(--main-font);
+h1, h2, h3  {
+    font-family:var(--main-font);
     color: var(--main-color);
+} 
+
+p , a { 
+    font-family: var(--main-font);
+    color: var(--sec-color);
 }
 
 .hero {
-    display:flex;
+    background-image: url("https://media-exp1.licdn.com/dms/image/C4E16AQEkzvzGy2HtfQ/profile-displaybackgroundimage-shrink_350_1400/0/1611986227644?e=1617840000&v=beta&t=WMmNa8IRN1VyDzFV-CAIbawyLJR4GyERwG4jfzi8C-k");
+    background-position: center;
+    background-size: cover;
+    height:300px;
+    
 }
 
-.hero img div {
-    flex-direction: row;
-    justify-content: space-between;
-}   
+
