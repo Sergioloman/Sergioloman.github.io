@@ -11,6 +11,7 @@
     --lines-color:#ec5390;
     --mid-color:#7f1a43;
     --button-color:#ec0f51;
+    --click-glow:#8e59b9;
     --main-font:Pathway Gothic One;
 }
 h1, h2, h3  {
@@ -149,6 +150,10 @@ aside ul li {
 
 }
 
+.icon-image {
+    max-height: 200px;
+    
+}
 
     
 /*main body ends*/
@@ -164,12 +169,27 @@ footer {
     
 }
 
+footer h2 {
+    font-size: 30px;
+}
 Footer div, form {
     margin:10px 30px 10px 30px;
 }    
     
+/*adding resonsive areas , making icons larger, and glow */
 
+li a:hover {
+    text-shadow: 0 0 30px var(--click-glow);
+    color: var(--click-glow);
+    font-size: +110%;
+}
 
+h1:hover, h2:hover, h3:hover {
+    text-shadow: 0 0 35px var(--main-color);
+
+    
+    
+}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
@@ -184,9 +204,6 @@ Footer div, form {
     }
 }
     
-
-
-
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
     header {
@@ -199,7 +216,6 @@ Footer div, form {
     }
 }
 
-
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
     header {
@@ -209,7 +225,10 @@ Footer div, form {
     }
     body{
         justify-content: center;
+        
     }
+
+   
 }
 
 
