@@ -10,6 +10,7 @@
     --back-color:black;
     --lines-color:#ec5390;
     --mid-color:#7f1a43;
+    --button-color:#ec0f51;
     --main-font:Pathway Gothic One;
 }
 h1, h2, h3  {
@@ -49,14 +50,14 @@ header h1 {
     font-size: 90px;
     padding-bottom: 5px;
 }
-span { 
+span a { 
     font-style: italic;
     text-decoration:none;
     
-
 }
 header h2 {
     font-size:30px;
+    color: var(--sec-color);
     
     
 }
@@ -88,7 +89,7 @@ header  nav ul  {
  
 header nav ul li {    
     font-size: 40px;
-    padding-left:30px
+    padding-left:40px
 
 
 }
@@ -101,19 +102,40 @@ main {
     margin:0 30px 0 30px;
 }   
 section {
+    padding-top: 20px;
     
+
+}
+
+article {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+
+}
+
+aside ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 20px;
-
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 20px 0 20px 0;
 }
 
-aside {
-    display: flex;
+aside ul li {
+    width: 100px;
+    height: 20px;
+    border-bottom: 6px solid var(--button-color);
+    /*border-radius: 25px;*/
+    padding:3px 0 1px 0;
     
-
+   
 }
+
+
+    
+/*main body ends*/
+
 /*footer edits*/
 
 footer {
