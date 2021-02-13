@@ -99,6 +99,22 @@ header nav ul li {
 }
 /*header ends*/
 
+/*hero edits*/
+
+.hero{
+    margin: 30px 0 0 0;
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.hero img {
+
+}
+
 
 /*main body mods*/
 main { 
