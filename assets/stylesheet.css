@@ -118,6 +118,7 @@ p {
 
 /*end font adjustments*/
 
+
 section {
     padding-top: 20px;
     display:flex;
@@ -150,10 +151,21 @@ aside ul li {
 
 }
 
-.icon-image {
-    max-height: 200px;
-    
+aside ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+
+
+.icon-image img {
+    height: 100px;
+    object-fit: contain;
+    
+
+}
+
+
 
     
 /*main body ends*/
