@@ -45,6 +45,8 @@ header {
     border-color: var(--lines-color);
     border-width: 0px 0px 8px 0px;
     
+
+    
 }
 
 header h1 {
@@ -164,25 +166,50 @@ footer {
 
 Footer div, form {
     margin:10px 30px 10px 30px;
-    
+}    
     
 
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
-@media screen and (max-width: 980px) {
-    
+@media screen and (max-width: 850px) {
+    header {
+        justify-content: center;
+        position: relative;
+        height: 100%;
+    }
+    body{
+        justify-content: center;
+    }
 }
+    
 
 
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+        position: relative;
+        height: 100%;
+    }
+    body{
+        justify-content: center;
+    }
 }
+
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+        position: relative;
+        height: 100%;
+    }
+    body{
+        justify-content: center;
+    }
 }
 
 
