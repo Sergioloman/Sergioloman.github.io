@@ -11,12 +11,14 @@
     --lines-color:#ec5390;
     --mid-color:#7f1a43;
     --button-color:#ec0f51;
+    --click-glow:#8e59b9;
     --main-font:Pathway Gothic One;
 }
 h1, h2, h3  {
     font-family:var(--main-font);
     color: var(--main-color);
 } 
+
 
 p , a , li { 
     font-family: var(--main-font);
@@ -43,6 +45,8 @@ header {
     border-style: solid; 
     border-color: var(--lines-color);
     border-width: 0px 0px 8px 0px;
+    
+
     
 }
 
@@ -100,12 +104,27 @@ header nav ul li {
 main { 
     
     margin:0 30px 0 30px;
+    
 }   
+
+/*font adjustments*/
+main h3, li{
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*end font adjustments*/
+
 section {
     padding-top: 20px;
-    
-
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
 }
+
 
 article {
     display: flex;
@@ -123,15 +142,18 @@ aside ul {
 }
 
 aside ul li {
-    width: 100px;
-    height: 20px;
-    border-bottom: 6px solid var(--button-color);
+    width: 150px;
+    height: 40px;
+    border-bottom: 8px solid var(--button-color);
     /*border-radius: 25px;*/
-    padding:3px 0 1px 0;
-    
-   
+    padding:10px 0 5px 0;
+
 }
 
+.icon-image {
+    max-height: 200px;
+    
+}
 
     
 /*main body ends*/
@@ -143,21 +165,70 @@ footer {
     border-color: var(--lines-color);
     border-width: 8px 0px 0px 0px;
     background: var(--back-color);
+    margin-bottom: 30px;
+    
 }
 
+footer h2 {
+    font-size: 30px;
+}
+Footer div, form {
+    margin:10px 30px 10px 30px;
+}    
+    
+/*adding resonsive areas , making icons larger, and glow */
 
+li a:hover {
+    text-shadow: 0 0 30px var(--click-glow);
+    color: var(--click-glow);
+    font-size: +110%;
+}
 
+h1:hover, h2:hover, h3:hover {
+    text-shadow: 0 0 35px var(--main-color);
+
+    
+    
+}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-}
 
+@media screen and (max-width: 850px) {
+    header {
+        justify-content: center;
+        position: relative;
+        height: 100%;
+    }
+    body{
+        justify-content: center;
+    }
+}
+    
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+        position: relative;
+        height: 100%;
+    }
+    body{
+        justify-content: center;
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+        position: relative;
+        height: 100%;
+    }
+    body{
+        justify-content: center;
+        
+    }
+
+   
 }
 
 
