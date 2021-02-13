@@ -18,6 +18,7 @@ h1, h2, h3  {
     color: var(--main-color);
 } 
 
+
 p , a , li { 
     font-family: var(--main-font);
     color: var(--sec-color);
@@ -100,12 +101,27 @@ header nav ul li {
 main { 
     
     margin:0 30px 0 30px;
+    
 }   
+
+/*font adjustments*/
+main h3, li{
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*end font adjustments*/
+
 section {
     padding-top: 20px;
-    
-
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
 }
+
 
 article {
     display: flex;
@@ -123,13 +139,12 @@ aside ul {
 }
 
 aside ul li {
-    width: 100px;
-    height: 20px;
-    border-bottom: 6px solid var(--button-color);
+    width: 150px;
+    height: 40px;
+    border-bottom: 8px solid var(--button-color);
     /*border-radius: 25px;*/
-    padding:3px 0 1px 0;
-    
-   
+    padding:10px 0 5px 0;
+
 }
 
 
@@ -143,14 +158,24 @@ footer {
     border-color: var(--lines-color);
     border-width: 8px 0px 0px 0px;
     background: var(--back-color);
+    margin-bottom: 30px;
+    
 }
 
+Footer div, form {
+    margin:10px 30px 10px 30px;
+    
+    
 
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
 @media screen and (max-width: 980px) {
+    
 }
+
+
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
