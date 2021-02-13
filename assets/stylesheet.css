@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    background: var(--back-color);
 }
 
 :root {
@@ -8,6 +9,7 @@
     --sec-color:#ffc4d0;
     --back-color:black;
     --lines-color:#ec5390;
+    --mid-color:#7f1a43;
     --main-font:Pathway Gothic One;
 }
 h1, h2, h3  {
@@ -25,35 +27,81 @@ a:link {
     text-decoration: none;
 }
 
+
+
 /* header mods*/
 header {
-    background-image: url("https://media-exp1.licdn.com/dms/image/C4E16AQEkzvzGy2HtfQ/profile-displaybackgroundimage-shrink_350_1400/0/1611986227644?e=1617840000&v=beta&t=WMmNa8IRN1VyDzFV-CAIbawyLJR4GyERwG4jfzi8C-k");
+    background: var(--back-color);
+    background-image: //url//("https://media-exp1.licdn.com/dms/image/C4E16AQEkzvzGy2HtfQ/profile-displaybackgroundimage-shrink_350_1400/0/1611986227644?e=1617840000&v=beta&t=WMmNa8IRN1VyDzFV-CAIbawyLJR4GyERwG4jfzi8C-k");
     background-position: center;
     background-size: cover;
     height:150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-style: solid; 
+    border-color: var(--lines-color);
+    border-width: 0px 0px 8px 0px;
+    
 }
 
 header h1 {
     font-size: 90px;
+    padding-bottom: 5px;
+}
+span { 
+    font-style: italic;
+    text-decoration:none;
+    
+
+}
+header h2 {
+    font-size:30px;
+    
+    
 }
 
-header nav ul {
+#title {
+    margin-left: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /*background:#ffff;*/
+}
+
+header nav {
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    /*background:#ffff;*/
+    margin-right:30px;
+}
+
+header  nav ul  {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-}
-
-header nav ul li {
-    padding: 20px 30px;
 
 }
+ 
+header nav ul li {    
+    font-size: 40px;
+    padding-left:30px
+
+
+}
+/*header ends*/
+
 
 /*main body mods*/
-
+main { 
+    
+    margin:0 30px 0 30px;
+}   
 section {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -66,6 +114,33 @@ aside {
     
 
 }
+/*footer edits*/
+
+footer {
+    border-style: solid; 
+    border-color: var(--lines-color);
+    border-width: 8px 0px 0px 0px;
+    background: var(--back-color);
+}
+
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+}
+
+
+
+
 
 
 
