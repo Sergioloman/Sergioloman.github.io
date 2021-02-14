@@ -193,6 +193,18 @@ aside ul li {
     justify-content: space-evenly;
 }
 
+#portfolio-main {
+    height:175px;
+}
+.screenshot {
+    height: 150px;
+    object-fit: contain;
+    margin-top: 45px;
+    border: 6px solid var(--main-color);
+    
+}
+
+
 
 .icon-image img {
     height: 100px;
@@ -269,6 +281,9 @@ h3:hover {
        
 }
 
+.screenshot:hover {
+    box-shadow: 0 0 35px var(--main-color);
+}
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 850px) {
