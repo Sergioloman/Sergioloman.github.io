@@ -47,6 +47,7 @@ header {
     border-width: 0px 0px 8px 0px;
     
 
+
     
 }
 
@@ -59,6 +60,9 @@ span a {
     text-decoration:none;
     
 }
+
+
+
 header h2 {
     font-size:30px;
     color: var(--sec-color);
@@ -82,6 +86,7 @@ header nav {
     margin-bottom: 20px;
     /*background:#ffff;*/
     margin-right:30px;
+    
 }
 
 header  nav ul  {
@@ -97,7 +102,35 @@ header nav ul li {
 
 
 }
+
+/*making the navigation bar sticky*/
+
+
+
 /*header ends*/
+
+/*hero edits*/
+
+.hero {
+    margin: 30px 0 0 0;
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+.hero img {
+    height: 300px;
+    border:8px solid var(--main-color);
+    border-radius: 50%;
+    margin: 30px;
+
+}
 
 
 /*main body mods*/
@@ -116,13 +149,16 @@ p {
     font-size: 20px;
 }
 
+
 /*end font adjustments*/
 
+
 section {
-    padding-top: 20px;
+    padding: 30px 0 30px 0;
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;  
+    
+
 }
 
 
@@ -130,6 +166,8 @@ article {
     display: flex;
     justify-content:center;
     text-align: center;
+    margin:30px 0;
+    padding:20px 0;
 
 }
 
@@ -141,18 +179,37 @@ aside ul {
     margin: 20px 0 20px 0;
 }
 
-aside ul li {
-    width: 150px;
+aside ul li a {
+    width: 200px;
     height: 40px;
     border-bottom: 8px solid var(--button-color);
-    /*border-radius: 25px;*/
     padding:10px 0 5px 0;
 
 }
 
-.icon-image {
-    max-height: 200px;
+aside ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#portfolio-main {
+    height:175px;
+}
+.screenshot {
+    height: 150px;
+    object-fit: contain;
+    margin-top: 45px;
+    border: 6px solid var(--main-color);
     
+}
+
+
+
+.icon-image img {
+    height: 100px;
+    object-fit: contain;
+
 }
 
     
@@ -165,32 +222,70 @@ footer {
     border-color: var(--lines-color);
     border-width: 8px 0px 0px 0px;
     background: var(--back-color);
-    margin-bottom: 30px;
-    
+    margin:70px 0 30px 0;
+
 }
 
-footer h2 {
+footer div {
     font-size: 30px;
-}
-Footer div, form {
+    text-align: center;
     margin:10px 30px 10px 30px;
 }    
-    
+ 
+
+
+
 /*adding resonsive areas , making icons larger, and glow */
+
+
+
+img {
+    transition: transform .4s;
+}
+
+aside img:hover {
+    transform: scale(1.3); 
+}
+
+
+
+
+.hero img:hover {
+    transform:scale(1.1);
+}
 
 li a:hover {
     text-shadow: 0 0 30px var(--click-glow);
     color: var(--click-glow);
-    font-size: +110%;
+    font-size: +105%;
+    
+}
+
+
+span a:hover{
+    text-shadow: 0 0 40px var(--click-glow); 
+    color: var(--click-glow);
+    font-size: +105%;
+
 }
 
 h1:hover, h2:hover, h3:hover {
-    text-shadow: 0 0 35px var(--main-color);
-
-    
-    
+    text-shadow: 0 0 35px var(--main-color); 
 }
 
+h3:hover {
+    font-size: +200%;
+
+}
+
+.hero img:hover {
+    box-shadow: 0 0 35px var(--main-color);
+       
+}
+
+.screenshot:hover {
+    box-shadow: 0 0 35px var(--main-color);
+}
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 850px) {
@@ -228,7 +323,8 @@ h1:hover, h2:hover, h3:hover {
         
     }
 
-   
+   /*must adjust the distance in between the li elementts-**/
+   /*they are WAYYYY to close when the screen gets around 575*/
 }
 
 
