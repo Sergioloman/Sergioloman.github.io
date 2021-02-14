@@ -181,7 +181,7 @@ aside ul {
 }
 
 aside ul li a {
-    width: 150px;
+    width: 200px;
     height: 40px;
     border-bottom: 8px solid var(--button-color);
     padding:10px 0 5px 0;
@@ -224,6 +224,8 @@ Footer div, form {
     
 /*adding resonsive areas , making icons larger, and glow */
 
+
+
 img {
     transition: transform .4s;
 }
@@ -231,6 +233,9 @@ img {
 aside img:hover {
     transform: scale(1.3); 
 }
+
+
+
 
 .hero img:hover {
     transform:scale(1.1);
