@@ -123,7 +123,7 @@ li{
 }
 
 p {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .hero h2, h3 {
@@ -244,10 +244,9 @@ h1:hover, h2:hover, h3:hover {
     text-shadow: 0 0 35px var(--main-color); 
 }
 
-h3:hover {
+/*h3:hover {
     font-size: +200%;
-
-}
+}*/
 
 .hero img:hover {
     box-shadow: 0 0 35px var(--main-color);
