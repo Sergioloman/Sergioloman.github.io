@@ -287,15 +287,26 @@ h3:hover {
 
 .screenshot:hover {
     box-shadow: 0 0 35px var(--main-color);
+    
 }
+
+/* MEDIA QUERY FOR MINIMIZED SCREENS */
+
+@media screen and (max-width: 1032px) {
+    Header {
+        height:100%
+    }
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 850px) {
     header {
-       
         justify-content: center;
-        position: relative;
         height: 100%;
+    }
+    header h2 {
+        text-align: center;
     }
     body{
         justify-content: center;
@@ -308,6 +319,9 @@ h3:hover {
         justify-content: center;
         position: relative;
         height: 100%;
+    }
+    header h2 {
+        text-align: center;
     }
     body{
         justify-content: center;
@@ -333,6 +347,10 @@ h3:hover {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+    header h2 {
+        text-align: center;
+    }
+
     aside ul {
         display: flex;
         flex-wrap: wrap;
@@ -340,6 +358,7 @@ h3:hover {
         align-items: center;
         
     }
+
     aside li {
         margin-top:10px;
         padding-top: 10px;
