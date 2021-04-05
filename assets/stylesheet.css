@@ -170,10 +170,10 @@ aside ul li {
     justify-content: space-evenly;
     align-items: center;
 }
-
+/*
 #portfolio-main {
     height:175px;
-}
+}*/
 .screenshot {
     height: 150px;
     object-fit: contain;
